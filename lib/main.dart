@@ -26,14 +26,26 @@ Future<void> main() async {
   if(GetPlatform.isAndroid) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "AIzaSyCc3OCd5I2xSlnftZ4bFAbuCzMhgQHLivA",
-        appId: "1:491987943015:android:fe79b69339834d5c8f1ec2",
-        messagingSenderId: "491987943015",
-        projectId: "stackmart-500c7",
+        apiKey: 'AIzaSyDiyJTuXzRSOsF3pOnZHxahJVjaMoUX02k',
+        appId: '1:108788948261:android:9fe97a9631771f25440ecc',
+        messagingSenderId: '108788948261',
+        projectId: 'shagy-80f44',
+        databaseURL: 'https://shagy-80f44-default-rtdb.firebaseio.com',
+        storageBucket: 'shagy-80f44.firebasestorage.app',
       ),
     );
-  }else {
-    await Firebase.initializeApp();
+  } else {
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(
+        apiKey: 'AIzaSyCUmUSSAgavPb80P_IhuXZcMnYaH5Bx570',
+        appId: '1:108788948261:ios:449245859b7080e2440ecc',
+        messagingSenderId: '108788948261',
+        projectId: 'shagy-80f44',
+        databaseURL: 'https://shagy-80f44-default-rtdb.firebaseio.com',
+        storageBucket: 'shagy-80f44.firebasestorage.app',
+        iosBundleId: 'com.pt.shagymartdboy',
+      ),
+    );
   }
 
   Map<String, Map<String, String>> languages = await di.init();

@@ -3,14 +3,14 @@ import 'package:sixam_mart_delivery/util/enums.dart';
 import 'package:sixam_mart_delivery/util/images.dart';
 
 class AppConstants {
-  static const String appName = '6amMart Delivery';
+  static const String appName = 'Shagy Delivery';
   static const double appVersion = 4.1; // Flutter SDK 3.44.7
   static const String fontFamily = 'Roboto';
   static const AppMode appMode = AppMode.delivery;
 
-  static const String baseUrl = 'https://6ammart-admin.6amtech.com';
+  static const String baseUrl = 'https://shagy.in/app';
 
-  static const String polylineMapKey = 'YOUR_MAP_KEY_HERE';
+  static const String polylineMapKey = 'AIzaSyCaCSJ0BZItSyXqBv8vpD1N4WBffJeKhLQ';
   static const String configUri = '/api/v1/config';
   static const String directionUri = '/api/v1/config/direction-api';
   static const String forgetPasswordUri = '/api/v1/auth/delivery-man/forgot-password';
